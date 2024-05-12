@@ -19,8 +19,8 @@ def descargar():
         answer = messagebox.askyesno("Confirmacion", f"Estas por descargar {cantidad_links} videos")
         if answer:
             if selection == "Audios":
-                for posicion,link in enumerate(links):
-                    mensaje = f"Video numero {posicion + 1} de {cantidad_links}"
+                for link in links:
+                    desc.descargar_audio(link,"C:\\Users\\Acer\\OneDrive\\Desktop\\Videos Descargados")
 
         if selection == "Videos":
             for link in links:
